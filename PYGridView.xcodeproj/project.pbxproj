@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E6E8B9121A78042E00FDF235 /* PYGridView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6E8B9111A78042E00FDF235 /* PYGridView.h */; };
-		E6E8B9141A78042E00FDF235 /* PYGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B9131A78042E00FDF235 /* PYGridView.m */; };
+		3824F5F5F721005D253A8573 /* libPods-PYGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */; };
+		E6E8B9321A78058E00FDF235 /* _PYGridItemUIInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B9291A78058D00FDF235 /* _PYGridItemUIInfo.m */; };
+		E6E8B9331A78058E00FDF235 /* PYGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B92B1A78058E00FDF235 /* PYGridItem.m */; };
+		E6E8B9341A78058E00FDF235 /* PYGridItem+GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B92D1A78058E00FDF235 /* PYGridItem+GridView.m */; };
+		E6E8B9351A78058E00FDF235 /* PYGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B92F1A78058E00FDF235 /* PYGridView.m */; };
+		E6E8B9361A78058E00FDF235 /* PYGridView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B9311A78058E00FDF235 /* PYGridView+Layout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +22,26 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				E6E8B9121A78042E00FDF235 /* PYGridView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.release.xcconfig"; sourceTree = "<group>"; };
+		D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYGridView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E8B90E1A78042E00FDF235 /* libPYGridView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPYGridView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E8B9111A78042E00FDF235 /* PYGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYGridView.h; sourceTree = "<group>"; };
-		E6E8B9131A78042E00FDF235 /* PYGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYGridView.m; sourceTree = "<group>"; };
+		E6E8B9281A78058D00FDF235 /* _PYGridItemUIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PYGridItemUIInfo.h; sourceTree = "<group>"; };
+		E6E8B9291A78058D00FDF235 /* _PYGridItemUIInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PYGridItemUIInfo.m; sourceTree = "<group>"; };
+		E6E8B92A1A78058D00FDF235 /* PYGridItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYGridItem.h; sourceTree = "<group>"; };
+		E6E8B92B1A78058E00FDF235 /* PYGridItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYGridItem.m; sourceTree = "<group>"; };
+		E6E8B92C1A78058E00FDF235 /* PYGridItem+GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYGridItem+GridView.h"; sourceTree = "<group>"; };
+		E6E8B92D1A78058E00FDF235 /* PYGridItem+GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYGridItem+GridView.m"; sourceTree = "<group>"; };
+		E6E8B92E1A78058E00FDF235 /* PYGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYGridView.h; sourceTree = "<group>"; };
+		E6E8B92F1A78058E00FDF235 /* PYGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYGridView.m; sourceTree = "<group>"; };
+		E6E8B9301A78058E00FDF235 /* PYGridView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYGridView+Layout.h"; sourceTree = "<group>"; };
+		E6E8B9311A78058E00FDF235 /* PYGridView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYGridView+Layout.m"; sourceTree = "<group>"; };
+		F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3824F5F5F721005D253A8573 /* libPods-PYGridView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB8F74FFF072702FB337D24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7462B31CDAE09219349DD31C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */,
+				60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E6E8B9051A78042E00FDF235 = {
 			isa = PBXGroup;
 			children = (
 				E6E8B9101A78042E00FDF235 /* PYGridView */,
 				E6E8B90F1A78042E00FDF235 /* Products */,
+				7462B31CDAE09219349DD31C /* Pods */,
+				0BB8F74FFF072702FB337D24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +94,16 @@
 		E6E8B9101A78042E00FDF235 /* PYGridView */ = {
 			isa = PBXGroup;
 			children = (
-				E6E8B9111A78042E00FDF235 /* PYGridView.h */,
-				E6E8B9131A78042E00FDF235 /* PYGridView.m */,
+				E6E8B9281A78058D00FDF235 /* _PYGridItemUIInfo.h */,
+				E6E8B9291A78058D00FDF235 /* _PYGridItemUIInfo.m */,
+				E6E8B92A1A78058D00FDF235 /* PYGridItem.h */,
+				E6E8B92B1A78058E00FDF235 /* PYGridItem.m */,
+				E6E8B92C1A78058E00FDF235 /* PYGridItem+GridView.h */,
+				E6E8B92D1A78058E00FDF235 /* PYGridItem+GridView.m */,
+				E6E8B92E1A78058E00FDF235 /* PYGridView.h */,
+				E6E8B92F1A78058E00FDF235 /* PYGridView.m */,
+				E6E8B9301A78058E00FDF235 /* PYGridView+Layout.h */,
+				E6E8B9311A78058E00FDF235 /* PYGridView+Layout.m */,
 			);
 			path = PYGridView;
 			sourceTree = "<group>";
@@ -73,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6E8B9221A78042E00FDF235 /* Build configuration list for PBXNativeTarget "PYGridView" */;
 			buildPhases = (
+				474A8AC6542F69523FF9DED7 /* Check Pods Manifest.lock */,
 				E6E8B90A1A78042E00FDF235 /* Sources */,
 				E6E8B90B1A78042E00FDF235 /* Frameworks */,
 				E6E8B90C1A78042E00FDF235 /* CopyFiles */,
+				C18FC91B40C439BE06AD33A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,12 +161,49 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		474A8AC6542F69523FF9DED7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C18FC91B40C439BE06AD33A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6E8B90A1A78042E00FDF235 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E8B9141A78042E00FDF235 /* PYGridView.m in Sources */,
+				E6E8B9351A78058E00FDF235 /* PYGridView.m in Sources */,
+				E6E8B9321A78058E00FDF235 /* _PYGridItemUIInfo.m in Sources */,
+				E6E8B9361A78058E00FDF235 /* PYGridView+Layout.m in Sources */,
+				E6E8B9341A78058E00FDF235 /* PYGridItem+GridView.m in Sources */,
+				E6E8B9331A78058E00FDF235 /* PYGridItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +286,9 @@
 		};
 		E6E8B9231A78042E00FDF235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -214,8 +296,9 @@
 		};
 		E6E8B9241A78042E00FDF235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
