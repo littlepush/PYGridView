@@ -139,7 +139,8 @@
             CGRect _iconFrame = CGRectMake(_iconX, _topPadding, _iconSize.width, _iconSize.height);
             [_iconLayer setFrame:_iconFrame];
             // title down
-            CGRect _titleFrame = CGRectMake(0, _iconSize.height + _topPadding, _bounds.size.width, _titleHeight);
+            CGRect _titleFrame = CGRectMake(0, _iconSize.height + _topPadding + _iconTitlePadding,
+                                            _bounds.size.width, _titleHeight);
             [_titleLayer setFrame:_titleFrame];
         } else {
             CGFloat _iconY = (_bounds.size.height - _iconSize.height) / 2;
