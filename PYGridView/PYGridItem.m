@@ -137,6 +137,7 @@
     [_iconLayer setHidden:YES];
     [_indicateLayer setHidden:YES];
     _itemStyle = PYGridItemStyleTitleOnly;
+    _iconTitlePadding = 5.f;
     [_titleLayer setTextAlignment:NSTextAlignmentCenter];
     [_titleLayer setLineBreakMode:NSLineBreakByTruncatingTail];
     [_titleLayer setPaddingLeft:5.f];
@@ -176,6 +177,15 @@
         [_iconLayer setHidden:((style & PYGridItemStyleIconOnly) == 0)];
         [_titleLayer setHidden:((style & PYGridItemStyleTitleOnly) == 0)];
         [_indicateLayer setHidden:((style & PYGridItemStyleIconTitleIndicate) == 0)];
+        
+        [self _relayoutSubItems];
+    }
+}
+
+- (void)setIconTitlePadding:(CGFloat)padding
+{
+    @synchronized( self ) {
+        _iconTitlePadding = padding;
         
         [self _relayoutSubItems];
     }
@@ -341,6 +351,7 @@
     _uiflag[_sIndex].title = YES;
     if ( state == _state ) {
         [_titleLayer setText:title];
+        [self _relayoutSubItems];
     }
 }
 - (void)setTextColor:(UIColor *)color forState:(UIControlState)state
@@ -361,6 +372,7 @@
     _uiflag[_sIndex].textFont = YES;
     if ( state == _state ) {
         [_titleLayer setTextFont:font];
+        [self _relayoutSubItems];
     }
 }
 - (void)setTextShadowOffset:(CGSize)offset forState:(UIControlState)state
@@ -401,6 +413,7 @@
     _uiflag[_sIndex].iconImage = YES;
     if ( state == _state ) {
         [_iconLayer setImage:image];
+        [self _relayoutSubItems];
     }
 }
 - (void)setIndicateImage:(UIImage *)image forState:(UIControlState)state
@@ -411,6 +424,7 @@
     _uiflag[_sIndex].indicateImage = YES;
     if ( state == _state ) {
         [_indicateLayer setImage:image];
+        [self _relayoutSubItems];
     }
 }
 - (void)setInnerShadowColor:(UIColor *)color forState:(UIControlState)state

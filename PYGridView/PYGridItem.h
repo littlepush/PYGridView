@@ -68,6 +68,8 @@ typedef NS_ENUM(NSUInteger, PYGridItemCollapseDirection) {
     
     // Style
     PYGridItemStyle             _itemStyle;
+    // Padding between icon and title for ver style
+    CGFloat                     _iconTitlePadding;
     
     PYView                      *_collapseView;
     CGFloat                     _collapseRate;
@@ -126,6 +128,8 @@ typedef NS_ENUM(NSUInteger, PYGridItemCollapseDirection) {
 
 // Set the style of current item.
 - (void)setGridItemStyle:(PYGridItemStyle)style;
+// Set the padding, default is 5px.
+- (void)setIconTitlePadding:(CGFloat)padding;
 
 // Overrided properties.
 - (void)setItemTitle:(NSString *)title; // This title will override all state's title

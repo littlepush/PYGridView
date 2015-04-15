@@ -130,11 +130,16 @@
         // icon up
         CGFloat _iconX = (_bounds.size.width - _iconSize.width) / 2;
         if ( (_itemStyle & PYGridItemStyleTitleOnly) > 0 ) {
-            CGRect _iconFrame = CGRectMake(_iconX, __p, _iconSize.width, _iconSize.height);
+            UIFont *_f = _titleLayer.textFont;
+            if ( _f == nil ) _f = [UIFont systemFontOfSize:14.f];
+            CGSize _titleSize = [@"a" sizeWithAttributes:@{NSFontAttributeName:_f}];
+            CGFloat _titleHeight = _titleSize.height;
+            CGFloat _ctntHeight = _iconSize.height + _titleSize.height + _iconTitlePadding;
+            CGFloat _topPadding = (_bounds.size.height - _ctntHeight) / 2;
+            CGRect _iconFrame = CGRectMake(_iconX, _topPadding, _iconSize.width, _iconSize.height);
             [_iconLayer setFrame:_iconFrame];
             // title down
-            CGFloat _titleHeight = _bounds.size.height - _iconSize.height - __p;
-            CGRect _titleFrame = CGRectMake(0, _iconSize.height + __p, _bounds.size.width, _titleHeight);
+            CGRect _titleFrame = CGRectMake(0, _iconSize.height + _topPadding, _bounds.size.width, _titleHeight);
             [_titleLayer setFrame:_titleFrame];
         } else {
             CGFloat _iconY = (_bounds.size.height - _iconSize.height) / 2;

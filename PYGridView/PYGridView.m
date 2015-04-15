@@ -615,6 +615,13 @@ shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRec
     }
 }
 
+- (void)setItemIconTitlePadding:(CGFloat)padding
+{
+    for ( PYGridItem *_item in self ) {
+        [_item setIconTitlePadding:padding];
+    }
+}
+
 - (void)drawRect:(CGRect)rect
 {
     // Update the seperator

@@ -184,6 +184,7 @@ typedef _GridNode __unsafe_unretained*      _GridRow;
 // Set the item style.
 - (void)setItemStyle:(PYGridItemStyle)style;
 - (void)setItemCornerRadius:(CGFloat)cornerRaidus;
+- (void)setItemIconTitlePadding:(CGFloat)padding;
 
 @end
 
