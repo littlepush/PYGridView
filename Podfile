@@ -3,7 +3,7 @@
 
 target 'PYGridView' do
 
-pod "PYControllers", "~> 0.2"
-pod "PYImageKit", "~> 0.1"
+pod "PYControllers"
+pod "PYImageKit"
 end
 
