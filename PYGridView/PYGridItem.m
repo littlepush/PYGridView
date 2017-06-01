@@ -40,8 +40,8 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYCore.h"
-#import "PYUIKit.h"
+#import <PYCore/PYCore.h>
+#import <PYUIKit/PYUIKit.h>
 #import "PYGridItem.h"
 #import "_PYGridItemUIInfo.h"
 #import "PYGridItem+GridView.h"

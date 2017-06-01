@@ -40,10 +40,9 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYCore.h"
-#import "PYUIKit.h"
-#import "PYControllers.h"
-#import "PYImageKit.h"
+#import <PYCore/PYCore.h>
+#import <PYUIKit/PYUIKit.h>
+#import <PYImageKit/PYImageKit.h>
 
 #import "PYGridView.h"
 #import "PYGridItem.h"

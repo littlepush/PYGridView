@@ -42,7 +42,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "PYRectangleCalc.h"
+#import <PYUIKit/PYUIKit.h>
 
 @interface _PYGridItemUIInfo : NSObject
 

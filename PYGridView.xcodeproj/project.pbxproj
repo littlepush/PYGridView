@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3824F5F5F721005D253A8573 /* libPods-PYGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */; };
+		3D807A93BF2E10E27C0BBFAE /* libPods-PYGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2268D93686DD4BA1A68476CF /* libPods-PYGridView.a */; };
+		E6B39EF01EE09B4F0085D0AF /* PYGridViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B39EEF1EE09B4F0085D0AF /* PYGridViewTest.m */; };
 		E6E8B9321A78058E00FDF235 /* _PYGridItemUIInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B9291A78058D00FDF235 /* _PYGridItemUIInfo.m */; };
 		E6E8B9331A78058E00FDF235 /* PYGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B92B1A78058E00FDF235 /* PYGridItem.m */; };
 		E6E8B9341A78058E00FDF235 /* PYGridItem+GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E8B92D1A78058E00FDF235 /* PYGridItem+GridView.m */; };
@@ -28,8 +29,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.release.xcconfig"; sourceTree = "<group>"; };
-		D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYGridView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2268D93686DD4BA1A68476CF /* libPods-PYGridView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYGridView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6F3C81B85D7B91E0B66E1C /* Pods-PYGridViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridViewTests/Pods-PYGridViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA543ACA8B47984B6DD350E1 /* Pods-PYGridView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.release.xcconfig"; sourceTree = "<group>"; };
+		B078E1FBACF81C62B4FDA23D /* Pods-PYGridView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.debug.xcconfig"; sourceTree = "<group>"; };
+		C139CF7445BB06ECE18E76B8 /* Pods-PYGridViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridViewTests/Pods-PYGridViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7913AAB500923014C8AFFA2 /* libPods-PYGridViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYGridViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B39EE01EE09AD30085D0AF /* PYGridViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYGridViewTests.m; sourceTree = "<group>"; };
+		E6B39EE21EE09AD30085D0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B39EED1EE09B4F0085D0AF /* PYGridViewTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYGridViewTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B39EEF1EE09B4F0085D0AF /* PYGridViewTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYGridViewTest.m; sourceTree = "<group>"; };
+		E6B39EF11EE09B4F0085D0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6E8B90E1A78042E00FDF235 /* libPYGridView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPYGridView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E8B9281A78058D00FDF235 /* _PYGridItemUIInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PYGridItemUIInfo.h; sourceTree = "<group>"; };
 		E6E8B9291A78058D00FDF235 /* _PYGridItemUIInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PYGridItemUIInfo.m; sourceTree = "<group>"; };
@@ -41,45 +51,74 @@
 		E6E8B92F1A78058E00FDF235 /* PYGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYGridView.m; sourceTree = "<group>"; };
 		E6E8B9301A78058E00FDF235 /* PYGridView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYGridView+Layout.h"; sourceTree = "<group>"; };
 		E6E8B9311A78058E00FDF235 /* PYGridView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYGridView+Layout.m"; sourceTree = "<group>"; };
-		F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYGridView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYGridView/Pods-PYGridView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E6B39EEA1EE09B4F0085D0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6E8B90B1A78042E00FDF235 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3824F5F5F721005D253A8573 /* libPods-PYGridView.a in Frameworks */,
+				3D807A93BF2E10E27C0BBFAE /* libPods-PYGridView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BB8F74FFF072702FB337D24 /* Frameworks */ = {
+		32FBAEA76F2D3301C193E61C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2997C2A5499B8B28D463DBE /* libPods-PYGridView.a */,
+				B078E1FBACF81C62B4FDA23D /* Pods-PYGridView.debug.xcconfig */,
+				AA543ACA8B47984B6DD350E1 /* Pods-PYGridView.release.xcconfig */,
+				5C6F3C81B85D7B91E0B66E1C /* Pods-PYGridViewTests.debug.xcconfig */,
+				C139CF7445BB06ECE18E76B8 /* Pods-PYGridViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		610761090A94DDD7BD08EC0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2268D93686DD4BA1A68476CF /* libPods-PYGridView.a */,
+				C7913AAB500923014C8AFFA2 /* libPods-PYGridViewTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7462B31CDAE09219349DD31C /* Pods */ = {
+		E6B39EDF1EE09AD30085D0AF /* PYGridViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */,
-				60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */,
+				E6B39EE01EE09AD30085D0AF /* PYGridViewTests.m */,
+				E6B39EE21EE09AD30085D0AF /* Info.plist */,
 			);
-			name = Pods;
+			path = PYGridViewTests;
+			sourceTree = "<group>";
+		};
+		E6B39EEE1EE09B4F0085D0AF /* PYGridViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6B39EEF1EE09B4F0085D0AF /* PYGridViewTest.m */,
+				E6B39EF11EE09B4F0085D0AF /* Info.plist */,
+			);
+			path = PYGridViewTest;
 			sourceTree = "<group>";
 		};
 		E6E8B9051A78042E00FDF235 = {
 			isa = PBXGroup;
 			children = (
 				E6E8B9101A78042E00FDF235 /* PYGridView */,
+				E6B39EDF1EE09AD30085D0AF /* PYGridViewTests */,
+				E6B39EEE1EE09B4F0085D0AF /* PYGridViewTest */,
 				E6E8B90F1A78042E00FDF235 /* Products */,
-				7462B31CDAE09219349DD31C /* Pods */,
-				0BB8F74FFF072702FB337D24 /* Frameworks */,
+				32FBAEA76F2D3301C193E61C /* Pods */,
+				610761090A94DDD7BD08EC0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E6E8B90E1A78042E00FDF235 /* libPYGridView.a */,
+				E6B39EED1EE09B4F0085D0AF /* PYGridViewTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,15 +151,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E6B39EEC1EE09B4F0085D0AF /* PYGridViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B39EF21EE09B4F0085D0AF /* Build configuration list for PBXNativeTarget "PYGridViewTest" */;
+			buildPhases = (
+				E6B39EE91EE09B4F0085D0AF /* Sources */,
+				E6B39EEA1EE09B4F0085D0AF /* Frameworks */,
+				E6B39EEB1EE09B4F0085D0AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PYGridViewTest;
+			productName = PYGridViewTest;
+			productReference = E6B39EED1EE09B4F0085D0AF /* PYGridViewTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E6E8B90D1A78042E00FDF235 /* PYGridView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6E8B9221A78042E00FDF235 /* Build configuration list for PBXNativeTarget "PYGridView" */;
 			buildPhases = (
-				474A8AC6542F69523FF9DED7 /* Check Pods Manifest.lock */,
+				3440A6DD2A1DA0E95C04D97D /* [CP] Check Pods Manifest.lock */,
 				E6E8B90A1A78042E00FDF235 /* Sources */,
 				E6E8B90B1A78042E00FDF235 /* Frameworks */,
 				E6E8B90C1A78042E00FDF235 /* CopyFiles */,
-				C18FC91B40C439BE06AD33A5 /* Copy Pods Resources */,
+				E74167EBA33329222DB2FF50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +193,14 @@
 		E6E8B9061A78042E00FDF235 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Push Lab";
 				TargetAttributes = {
+					E6B39EEC1EE09B4F0085D0AF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = VT7263HWQT;
+						ProvisioningStyle = Automatic;
+					};
 					E6E8B90D1A78042E00FDF235 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -157,34 +219,45 @@
 			projectRoot = "";
 			targets = (
 				E6E8B90D1A78042E00FDF235 /* PYGridView */,
+				E6B39EEC1EE09B4F0085D0AF /* PYGridViewTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E6B39EEB1EE09B4F0085D0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		474A8AC6542F69523FF9DED7 /* Check Pods Manifest.lock */ = {
+		3440A6DD2A1DA0E95C04D97D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C18FC91B40C439BE06AD33A5 /* Copy Pods Resources */ = {
+		E74167EBA33329222DB2FF50 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +268,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E6B39EE91EE09B4F0085D0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B39EF01EE09B4F0085D0AF /* PYGridViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6E8B90A1A78042E00FDF235 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +291,43 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		E6B39EF31EE09B4F0085D0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VT7263HWQT;
+				INFOPLIST_FILE = PYGridViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushlab.PYGridViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E6B39EF41EE09B4F0085D0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VT7263HWQT;
+				INFOPLIST_FILE = PYGridViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushlab.PYGridViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
 		E6E8B9201A78042E00FDF235 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -223,14 +341,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -263,14 +385,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -286,7 +411,7 @@
 		};
 		E6E8B9231A78042E00FDF235 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F16FD86F37A9FDA278CABFF6 /* Pods-PYGridView.debug.xcconfig */;
+			baseConfigurationReference = B078E1FBACF81C62B4FDA23D /* Pods-PYGridView.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,7 +421,7 @@
 		};
 		E6E8B9241A78042E00FDF235 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60313200B1BE38F91A756DA1 /* Pods-PYGridView.release.xcconfig */;
+			baseConfigurationReference = AA543ACA8B47984B6DD350E1 /* Pods-PYGridView.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +432,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E6B39EF21EE09B4F0085D0AF /* Build configuration list for PBXNativeTarget "PYGridViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B39EF31EE09B4F0085D0AF /* Debug */,
+				E6B39EF41EE09B4F0085D0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E6E8B9091A78042E00FDF235 /* Build configuration list for PBXProject "PYGridView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

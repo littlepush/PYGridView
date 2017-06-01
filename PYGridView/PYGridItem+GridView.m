@@ -40,7 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYUIKit.h"
+#import <PYUIKit/PYUIKit.h>
 #import "PYGridItem+GridView.h"
 #import "_PYGridItemUIInfo.h"
 
