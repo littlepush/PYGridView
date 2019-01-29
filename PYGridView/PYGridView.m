@@ -213,10 +213,10 @@
     if ( _responderGesture.state != UIGestureRecognizerStateRecognized ) {
         if ( _selectedItem.collapseRate > 0 ) {
             [PYView animateWithDuration:ANIMATION_TIME animations:^{
-                if ( _selectedItem.isCollapsed ) {
-                    [_selectedItem uncollapse];
+                if ( self->_selectedItem.isCollapsed ) {
+                    [self->_selectedItem uncollapse];
                 } else {
-                    [_selectedItem collapse];
+                    [self->_selectedItem collapse];
                 }
             }];
         } else {
@@ -242,10 +242,10 @@
     [_selectedItem setState:_selectedItemState];
     if ( _selectedItem.collapseRate > 0 ) {
         [PYView animateWithDuration:ANIMATION_TIME animations:^{
-            if ( _selectedItem.isCollapsed ) {
-                [_selectedItem uncollapse];
+            if ( self->_selectedItem.isCollapsed ) {
+                [self->_selectedItem uncollapse];
             } else {
-                [_selectedItem collapse];
+                [self->_selectedItem collapse];
             }
         }];
     } else {
@@ -263,10 +263,10 @@
         [_selectedItem setState:_selectedItemState];
         if ( _selectedItem.collapseRate > 0 ) {
             [PYView animateWithDuration:ANIMATION_TIME animations:^{
-                if ( _selectedItem.isCollapsed ) {
-                    [_selectedItem uncollapse];
+                if ( self->_selectedItem.isCollapsed ) {
+                    [self->_selectedItem uncollapse];
                 } else {
-                    [_selectedItem collapse];
+                    [self->_selectedItem collapse];
                 }
             }];
         } else {
@@ -294,11 +294,11 @@
         if ( _newMoving.state == UIControlStateDisabled ) return;
         UIControlState _newState = _newMoving.state;
         [PYView animateWithDuration:ANIMATION_TIME animations:^{
-            [_selectedItem setState:_selectedItemState];
+            [self->_selectedItem setState:self->_selectedItemState];
             [_newMoving setState:UIControlStateHighlighted];
         } completion:^(BOOL finished) {
-            _selectedItem = _newMoving;
-            _selectedItemState = _newState;
+            self->_selectedItem = _newMoving;
+            self->_selectedItemState = _newState;
         }];
     }
 }

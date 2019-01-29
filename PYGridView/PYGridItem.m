@@ -150,8 +150,8 @@
     _isCollapsed = YES;
     [PYView animateWithDuration:.175 animations:^{
         // Tell the parent to resize.
-        [_collapseView setAlpha:1.f];
-        [_parentView _reformCellsWithFixedCellbounds];
+        [self->_collapseView setAlpha:1.f];
+        [self->_parentView _reformCellsWithFixedCellbounds];
     }];
 }
 
@@ -161,8 +161,8 @@
     _isCollapsed = NO;
     [PYView animateWithDuration:.175 animations:^{
         // Tell the parent to resize.
-        [_collapseView setAlpha:0.f];
-        [_parentView _reformCellsWithFixedCellbounds];
+        [self->_collapseView setAlpha:0.f];
+        [self->_parentView _reformCellsWithFixedCellbounds];
     }];
 }
 

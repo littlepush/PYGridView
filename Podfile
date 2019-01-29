@@ -8,7 +8,7 @@ target 'PYGridView' do
   # Pods for PYGridView
   pod "PYImageKit"
 
-  target 'PYGridViewTests' do
+  target 'PYGridViewTest' do
     inherit! :search_paths
     # Pods for testing
   end
